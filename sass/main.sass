@@ -1,0 +1,391 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: rgba(211,31,31,1)
+
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+//header
+
+.lvltwo-header
+	height: 230px
+	background-color: #dbdbdb
+	&-logo
+		margin-top: 65px
+		display: flex
+		align-items: flex-end
+		&-img
+			width: 100px
+			height: 100px
+			margin-right: 10px
+			background-color: $accent
+		&-text
+			h1
+				font-size: 25px
+				line-height: 22px
+				color: $accent
+				margin-bottom: 16px
+			p
+				font-size: 11px
+				line-height: 11px
+				color: $accent
+	&-contacts
+		float: right
+		margin-top: 45px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+
+		p
+			margin-bottom: 0
+			font-size: 20px
+			line-height: 24px
+			color: $accent
+			font-family: "ProximaNova"
+			letter-spacing: 1px
+		button
+			border: none
+			font-size: 14px
+			border-bottom: 1px dashed $accent
+			line-height: 12px
+			padding: 0
+			margin-top: 10px
+			font-weight: bold
+			color: $accent
+			cursor: pointer
+			outline: none
+//nav-menu
+
+.lvltwo-nav
+	background-color: $accent
+	position: relative
+	ul
+		display: flex
+		list-style-type: none
+		justify-content: center
+		align-items: center
+		height: 80px
+		margin: 0
+		padding-left: 0
+		li
+			padding: 0 20px
+			border-left: 2px solid #fff
+			height: 28px
+			&:first-child
+				border: none
+		a
+			line-height: 28px
+			font-size: 30px
+			color: #fff
+			white-space: nowrap
+.hamburger--spring
+	position: absolute
+	z-index: 100
+	right: 0
+	top: -50px
+
+//slider
+
+.lvltwo-slider
+	position: relative
+	height: 400px
+	background-color: #f8f8f8
+	overflow: hidden
+	&-slide
+		height: 400px
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center 
+.slick-next, .slick-prev
+	width: 34px
+	height: 61px
+.slick-next
+	right: 130px
+	
+.slick-prev
+	z-index: 99
+	left: 130px
+
+//bread
+.lvltwo-breadcrumbs
+	ul
+		margin-top: 10px
+		display: flex
+		list-style-type: none
+		color: $accent
+		font-size: 13px
+		margin-bottom: 25px
+		padding-left: 0
+		a
+			color: $accent
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+
+		li
+			margin: 0 3px
+			
+			&:after
+				content: ' /'
+			&:last-child
+				&:after
+					display: none
+				a
+					text-decoration: none
+
+// content
+
+//aside
+.lvltwo-content-aside
+	&-spis
+		list-style-type: none
+		padding-left: 0
+		a
+			color: $accent
+		li
+			line-height: 16px
+			margin: 15px 0
+			&:first-child
+				margin-top: 0
+		&-pod
+			display: none
+			font-size: 13px
+			list-style-type: disc
+			padding-left: 22px
+			li
+				margin: 5px 0
+				&:first-child
+					margin-top: 5px
+		li.active > a
+			
+			text-decoration: underline
+		li.active > ul
+			display: block
+	&-price
+		margin-top: 110px
+		img
+			margin-left: 20px
+		h1
+			color: #464646
+.hamburger
+	float: right
+	display: none
+	&:focus
+		outline: none
+
+
+
+//buy-list
+
+.lvltwo-conten-central
+	display: flex
+	flex-wrap: wrap
+	border-bottom: 1px solid $accent
+	&-block
+		padding: 20px 20px 14px 20px
+		background-color: $accent-light
+		margin: 0 7.5px 20px 7.5px
+		p
+			width: 200px
+			font-size: 16px
+			line-height: 18px
+			margin-top: 17px
+			color: $accent
+		&-price
+			width: 210px
+			margin-top: 45px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			h1
+				margin-bottom: 0
+				color: #464646
+			img
+				height: 21px
+				margin-right: 16px
+				cursor: pointer
+	&-nav
+		width: 100%
+		margin-top: 10px
+		margin-bottom: 65px
+		font-family: "ProximaNova"
+		ul
+			padding-left: 0
+			margin: 0
+			display: flex
+			justify-content: center
+			list-style-type: none
+			li
+				margin: 0 10px
+				a
+					color: $accent
+				
+			li.active
+				transform: scale(1.2)
+			
+.lvltwo-content-p
+	color: #000000
+	font-family: "Arial MT"
+	font-size: 13px
+	font-weight: 400
+	line-height: 15.6px
+	margin-top: 29px
+
+
+//footer	
+
+.lvltwo-footer
+	height: 220px
+	background: $accent	
+	margin-top: 72px
+	overflow: hidden
+	&-content
+		margin-top: 50px
+		display: flex
+		font-size: 14px
+		justify-content: space-between
+		&-info
+			p
+				color: #ededed
+				margin-bottom: 0
+		&-nav
+			ul
+				list-style-type: none
+				li
+					margin: 2px 0
+					a
+						color: #ededed
+						text-decoration: underline
+		&-logo
+			
+			display: flex
+			
+			&-img
+				width: 100px
+				height: 100px
+				margin-right: 10px
+				background-color: #fff
+			&-text
+				h1
+					margin-top: 10px
+					font-size: 25px
+					line-height: 22px
+					color: #fff
+					margin-bottom: 16px
+				p
+					font-size: 11px
+					line-height: 11px
+					color: #ededed
+
+//feedback
+
+.lvltwo-feedback
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background-color: rgba(#000, 0.4)
+	z-index: 997
+	display: none
+	&-close
+		position: absolute
+		z-index: 999
+		width: 27px
+		height: 27px
+		background-color: $accent
+		top: -27px
+		right: -27px
+		cursor: pointer
+		&:after, &:before
+			content: ' '
+			position: absolute
+			height: 20px
+			width: 1px
+			background-color: #fff
+			left: 13px
+			top: 3px
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+
+	&-form
+		position: relative
+		margin: 0 auto
+		padding: 30px 62px 26px 63px
+		background-color: #fff
+		width: 466px
+		height: 578px
+		display: flex
+		flex-direction: column
+		margin-top: 50px
+		z-index: 998
+		h1
+			text-transform: uppercase
+			text-align: center
+			color: #545454
+			letter-spacing: -1px
+			line-height: 1em
+			margin-bottom: 35px
+		input
+			margin-bottom: 20px
+			height: 42px
+			padding-left: 10px
+			padding-right: 10px
+			font-size: 13px
+			font-style: italic
+			border-color: $accent
+		label
+			text-align: center
+			font-size: 14px
+			line-height: 14px
+			margin-bottom: 5px
+		input[type="submit"]
+			width: 128px
+			height: 42px
+			margin: 0 auto
+			margin-top: 21px
+			background-color: $accent
+			text-transform: uppercase
+			color: #fff
+			padding-top: 5px
+			cursor: pointer
+			
+		textarea
+			resize: none
+			padding-left: 10px
+			padding-right: 10px
+			height: 142px
+
+@import "media" // Always at the end

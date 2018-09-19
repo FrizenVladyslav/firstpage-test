@@ -1,0 +1,175 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
++media-breakpoint-down(xl)
++media-breakpoint-down(lg)
+	.lvltwo-feedback-form
+		padding: 15px 30px
+		height: 340px
+		width: 50%
+		margin-top: 40px
+		h1
+			font-size: 13px
+			margin-bottom: 5px
+		label
+			font-size: 10px
+		input
+			margin-bottom: 10px
+			height: 30px
+		input[type=submit]
+			margin-top: 15px
+		textarea
+			height: 75px
+	.lvltwo-nav
+		ul
+			a
+				font-size: 25px
+	
+	.lvltwo-conten-central
+		justify-content: center
+	.slick-next
+		right: 100px
+	.slick-prev
+		left: 100px
++media-breakpoint-down(md)
+	.lvltwo-nav
+		ul
+			a
+				font-size: 20px
+	.slick-next
+		right: 50px
+	.slick-prev
+		left: 50px
+	.lvltwo-conten-central-block
+		padding: 10px 10px 9px 10px
+	.lvltwo-footer-content-nav
+		ul
+			padding-left: 10px
+
++media-breakpoint-down(sm)
+	.lvltwo-header-logo-img,
+	.lvltwo-footer-content-logo-img
+		width: 90px
+		height: 90px
+	.lvltwo-header-logo-text,
+	.lvltwo-footer-content-logo-text
+		h1
+			font-size: 20px
+	.lvltwo-header-contacts
+		p
+			font-size: 18px
+	.lvltwo-nav
+		ul
+			display: none
+			height: 250px
+			width: 200px
+			z-index: 100
+			position: absolute
+			right: -10px
+			top: -10px
+			flex-direction: column
+			background-color: rgba($accent, 0.7)
+			border-radius: 15px
+			box-shadow: 0 0 10px 5px rgba(#000, 0.2)
+			li
+				width: 100%
+				text-align: center
+				padding: 5px 15px
+				border-left: none
+				border-bottom: 1px solid #fff
+				height: 50px
+				a
+					font-size: 14px
+				&:first-child
+					border-bottom: 1px solid #fff
+					padding-top: 10px
+				&:last-child
+					border: none
+	.lvltwo-slider
+		height: 200px
+		&-slide
+			height: 200px
+	.lvltwo-content-aside
+		position: relative
+		&-spis
+			display: none
+			position: absolute
+			z-index: 99
+			background-color: rgba(#fff, .9)
+			border-radius: 20px
+			right: 0
+			top: 50px
+			box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1)
+			padding: 20px
+			padding-bottom: 10px
+	.hamburger
+		display: block
+	.hamburger-inner,
+	.hamburger-inner:after,
+	.hamburger-inner:before
+		background-color: $accent
+	.lvltwo-content-aside-price
+		display: none
+	.lvltwo-content-p
+		font-size: 11px
+	.lvltwo-footer-content-nav
+		ul
+			padding-left: 0
+			font-size: 13px
++media-breakpoint-down(xs)
+	.lvltwo-feedback-form
+		padding: 15px 30px
+		height: 340px
+		width: 80%
+		margin-top: 40px
+	.lvltwo-header-logo-img,
+	.lvltwo-footer-content-logo-img
+		width: 60px
+		height: 60px
+	.lvltwo-header-logo-text,
+	.lvltwo-footer-content-logo-text
+		h1
+			font-size: 12px
+			line-height: 12px
+			margin-bottom: 9px
+		p
+			margin-bottom: 0
+			font-size: 10px
+	.lvltwo-header-contacts
+		p
+			font-size: 15px
+			white-space: nowrap
+	.lvltwo-nav
+		ul
+			right: 70px
+	.slick-prev,
+	.slick-next
+		height: 33px
+		width: 22px
+	.slick-next
+		right: 10px
+	.slick-prev
+		left: 10px
+	.lvltwo-footer
+		height: 120px
+		&-content
+			margin-top: 20px
+	.lvltwo-footer-content-info
+		p
+			font-size: 11px
+	.lvltwo-footer-content-nav
+		ul
+			padding-left: 0
+			font-size: 13px
+			display: none
+
+
+/*==========  Mobile First  ==========*/
+
++media-breakpoint-up(xs)
++media-breakpoint-up(sm)
++media-breakpoint-up(md)
++media-breakpoint-up(lg)
++media-breakpoint-up(xl)

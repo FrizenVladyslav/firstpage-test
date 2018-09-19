@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>lvl - 2 </title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+		<header class="lvltwo-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<div class="lvltwo-header-logo">
+							<div class="lvltwo-header-logo-img"></div>
+							<div class="lvltwo-header-logo-text">
+								<h1>Название <br>компании</h1>
+								<p>cамая клевая компания</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6">
+						<div class="lvltwo-header-contacts">
+							<p>+7(499) 777-77-77</p>
+							<p>+7(499) 777-77-77</p>
+							<button id="feedback-button">Обратная связь</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="lvltwo-feedback">
+			<form class="lvltwo-feedback-form">
+				<div class="lvltwo-feedback-close"></div>
+				<h1>обратная связь</h1>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="lvltwo.com">
+				<input type="hidden" name="admin_email" value="lvltwo@mail.com">
+				<input type="hidden" name="form_subject" value="Form Subject">
+				<!--End Hidden Required Fields -->
+
+				<label for="feedback-name">Ваше имя*</label>
+				<input id="feedback-name" name="name" placeholder="" required type="text">
+				<label for="feedback-number">Телефон*</label>
+				<input id="feedback-number" name="number" placeholder="" required type="number">
+				<label for="feedback-email">Email*</label>
+				<input id="feedback-email" name="email" placeholder="" required type="email">
+				<label for="">Сообщение</label>
+				<textarea></textarea>
+				<input id="feedback-submit" type="submit">
+			</form>
+
+		</section>
+
+		<nav class="lvltwo-nav">
+
+			<button class="hamburger hamburger--spring" type="button">
+			  <span class="hamburger-box ">
+			    <span class="hamburger-inner "></span>
+			  </span>
+			</button>  
+
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Прайс-лист</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	
+		<div class="lvltwo-carousel">
+			<div class="lvltwo-slider">
+				<div class="lvltwo-slider-slide" style="background-image: url('img/slider/img1.png')"></div>
+				<div class="lvltwo-slider-slide" style="background-image: url('img/slider/img2.png')"></div>
+			</div>
+
+
+		</div>
+	
+		<section class="lvltwo-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Бытовая техника</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="lvltwo-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						
+						<div class="lvltwo-content-aside">
+
+							<button class="hamburger hamburger--stand-r" type="button">
+							  <span class="hamburger-box ">
+							    <span class="hamburger-inner "></span>
+							  </span>
+							</button>  
+
+							<ul class="lvltwo-content-aside-spis">
+								<li><a class='lvltwo-pjax'  href="#">Автомобили</a></li>
+								<li class="active"><a  href="#">Бытовая техника</a>
+									<ul class="lvltwo-content-aside-spis-pod">
+										<li><a class='lvltwo-pjax' href="#">Микроволновки</a></li>
+										<li><a class='lvltwo-pjax' href="#">Холодильники</a></li>
+										<li><a  class='lvltwo-pjax'href="#">Посудомоечные машины</a></li>
+										<li><a class='lvltwo-pjax' href="#">Чайники</a></li>
+									</ul>
+								</li>
+								<li><a class='lvltwo-pjax' href="#">Мобильная техника</a></li>
+								<li><a class='lvltwo-pjax' href="#">Компьютеры</a></li>
+								<li><a class='lvltwo-pjax' href="#">Одежда</a></li>
+								<li><a class='lvltwo-pjax' href="#">Недвижемость</a></li>
+							</ul>
+
+							<div class="lvltwo-content-aside-price">
+								<img src="img/x.png">
+								<h1>Прайс-лист</h1>
+							</div>
+						</div>
+
+					</div>
+
+				
+					<div class="col-md-9">
+						<div id="lvltwo-pjax-container" class="lvltwo-conten-central">
+							<div class="lvltwo-conten-central-block">
+								<img src="img/nophoto.png" alt="">
+								<p>Самый клевый чайник, который надо купить!</p>
+								<div class="lvltwo-conten-central-block-price"><h1>1 900 р.</h1> <img src="img/addtobasket-mini.png"></div>
+							</div>
+							<div class="lvltwo-conten-central-block">
+								<img src="img/nophoto.png" alt="">
+								<p>Самый клевый чайник, который надо купить!</p>
+								<div class="lvltwo-conten-central-block-price"><h1>1 900 р.</h1> <img src="img/addtobasket-mini.png"></div>
+							</div>
+							<div class="lvltwo-conten-central-block">
+								<img src="img/nophoto.png" alt="">
+								<p>Самый клевый чайник, который надо купить!</p>
+								<div class="lvltwo-conten-central-block-price"><h1>1 900 р.</h1> <img src="img/addtobasket-mini.png"></div>
+							</div>
+							<div class="lvltwo-conten-central-block">
+								<img src="img/nophoto.png" alt="">
+								<p>Самый клевый чайник, который надо купить!</p>
+								<div class="lvltwo-conten-central-block-price"><h1>1 900 р.</h1> <img src="img/addtobasket-mini.png"></div>
+							</div>
+							<div class="lvltwo-conten-central-block">
+								<img src="img/nophoto.png" alt="">
+								<p>Самый клевый чайник, который надо купить!</p>
+								<div class="lvltwo-conten-central-block-price"><h1>1 900 р.</h1> <img src="img/addtobasket-mini.png"></div>
+							</div>
+							
+							<div class="lvltwo-conten-central-nav">
+								<ul>
+									<li><a class="lvltwo-pjax" href="#">1</a></li>
+									<li><a class="lvltwo-pjax" href="#">2</a></li>
+									<li class="active"><a href="#">3</a></li>
+									<li><a class="lvltwo-pjax" href="#">4</a></li>
+									<li><a class="lvltwo-pjax" href="#">5</a></li>
+									<li><a class="lvltwo-pjax" href="#">6</a></li>
+									<li><a class="lvltwo-pjax" href="#">7</a></li>
+								</ul>
+							</div>
+
+							
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-9 offset-lg-3">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-6"><p class="lvltwo-content-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> </div>
+							<div class="col-6"><p class="lvltwo-content-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
+						</div>
+					</div>
+				
+				</div>
+
+			</div>
+		</section>
+
+		<footer class="lvltwo-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="lvltwo-footer-content">
+							<div class="lvltwo-footer-content-info">
+								<p>&copy; 2012-2013 ЗАО "Компания"</p>
+								<p>info@name.ru</p>
+							</div>
+							<div class="lvltwo-footer-content-nav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Каталог</a></li>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">Прайс-лист</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="lvltwo-footer-content-logo">
+								<div class="lvltwo-footer-content-logo-img"></div>
+								<div class="lvltwo-footer-content-logo-text">
+								<h1>Название <br>компании</h1>
+								<p>cамая клевая компания</p>
+							</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	<script src="js/scripts.min.js"></script>
+	
+	
+</body>
+</html>
